@@ -14,7 +14,6 @@ import base64
 
 def handle_uploaded_file(f):
     data = pd.read_csv(f)
-    print(data,"********************************************")
     analysis_result = data.describe()
     return analysis_result
 
