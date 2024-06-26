@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <div>
+        {{ analysis_result|safe }}
+    </div>
+    <div>
+        <img src="data:image/png;base64,{{ image_base64 }}" alt="Analysis Result">
+    </div>
+    <a href="{% url 'upload_file' %}">Upload another file</a>
+</body>
+</html>
